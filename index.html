@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ladataan Peasy...</title>
+    <link rel="stylesheet" href="styles.css">
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
@@ -11,11 +13,13 @@
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
             window.location.href = "https://apps.apple.com/fi/app/peasy-keikkaty%C3%B6st%C3%A4-helppoa/id6451071449";
         } else {
-            window.location.href = "https://www.peasy.fi"; // Varmuuskohde
+            window.location.href = "https://www.peasy.fi";
         }
     </script>
 </head>
 <body>
-    <p>Ohjataan oikeaan sovelluskauppaan...</p>
+    <img src="logo.png" alt="Peasy-logo" class="logo">
+    <h1>Ladataan Peasy...</h1>
+    <p>Ohjataan sinut oikeaan sovelluskauppaan.</p>
 </body>
 </html>
