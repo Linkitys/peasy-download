@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ladataan Peasy...</title>
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=fi.peasy.peasy";
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/fi/app/peasy-keikkaty%C3%B6st%C3%A4-helppoa/id6451071449";
+        } else {
+            window.location.href = "https://www.peasy.fi"; // Varmuuskohde
+        }
+    </script>
+</head>
+<body>
+    <p>Ohjataan oikeaan sovelluskauppaan...</p>
+</body>
+</html>
