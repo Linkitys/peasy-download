@@ -1,0 +1,57 @@
+/* Peasyn värit */
+:root {
+    --primary-color: #006C51;
+    --dark-color: #013829;
+    --text-color: #ffffff;
+}
+
+/* Yleinen reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, var(--primary-color), var(--dark-color));
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Peasy-logo */
+.logo {
+    max-width: 200px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* Tekstityylit */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Responsiivisuus */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .logo {
+        max-width: 150px;
+    }
+}
